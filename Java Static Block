@@ -1,0 +1,16 @@
+//Java Static Block
+public class G14 {
+	static int a;
+	public G14() {
+		System.out.println("Hello");
+	}
+	static{
+		System.out.println("Hi"); //executed before the main method
+		a = 13;
+	}
+	public static void main(String[] args) {
+		G14 obj = new G14();
+		System.out.println(a);
+	}
+
+}
