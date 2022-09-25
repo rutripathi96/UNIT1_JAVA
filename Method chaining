@@ -1,0 +1,26 @@
+//Method chaining
+import java.util.Scanner;
+public class G12{
+	int a;
+	int b;
+	public G12 fun(int a,int b) {
+		this.a = a;
+		this.b = b;
+		System.out.println(this.a+" "+this.b);
+		return this;
+	}
+	public G12 fun2() {
+		System.out.println(a+b);
+		return this;
+	}
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		G12 obj = new G12();
+		System.out.println("Enter the values :- ");
+		int x = input.nextInt();
+		int y = input.nextInt();
+		int m = input.nextInt();
+		int n = input.nextInt();
+		obj.fun(x,y).fun2().fun(m,n).fun2();
+	}
+}
