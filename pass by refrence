@@ -1,0 +1,18 @@
+//pass by refrence
+public class G13 {
+	int a = 13;
+	int b = 14;
+	public void fun(G13 o) {
+		o.a +=1;
+		o.b+=2;
+		System.out.println(o.a+" "+o.b);
+		
+	}
+	public static void main(String[] args) {
+		G13 obj = new G13();
+		System.out.println(obj.a+" "+obj.b);
+		obj.fun(obj);
+		System.out.println(obj.a+" "+obj.b);
+	}
+
+}
