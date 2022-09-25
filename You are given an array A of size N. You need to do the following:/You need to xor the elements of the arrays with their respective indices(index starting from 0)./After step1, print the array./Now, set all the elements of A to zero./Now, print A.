@@ -1,0 +1,32 @@
+//You are given an array A of size N. You need to do the following:
+//
+//You need to xor the elements of the arrays with their respective indices(index starting from 0).
+//After step1, print the array.
+//Now, set all the elements of A to zero.
+//Now, print A.
+
+import java.util.*;
+public class G3{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number of elements of the array :- ");
+		int num = input.nextInt();
+		int[] a = new int[num];
+		System.out.println("Enter the elements :- ");
+		for(int i=0;i<a.length;i++) {
+			a[i] = input.nextInt();
+		}
+		int[] b = new int[num];
+		for(int i=0;i<a.length;i++) {
+			int m = a[i]^i;
+			b[i] = m;
+			System.out.print(b[i]+" ");
+			a[i] = 0;
+		}
+		for(int i:a) {
+			System.out.print(" " + i);
+		}
+		
+		
+	}
+}
