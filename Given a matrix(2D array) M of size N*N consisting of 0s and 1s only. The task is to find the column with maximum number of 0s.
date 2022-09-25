@@ -1,0 +1,48 @@
+//Given a matrix(2D array) M of size N*N consisting of 0s and 1s only. The task is to find the column with maximum number of 0s.
+import java.util.Scanner;
+public class G4 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number of rows and columns :- ");
+		int r = input.nextInt();
+		int c = input.nextInt();
+		int[][] a = new int[r][c];
+		System.out.println("Enter the elements :- ");
+		for(int i=0;i<r;i++) {
+			for(int j=0;j<c;j++) {
+				a[i][j] = input.nextInt();
+			}
+		}
+		System.out.println("The entered matrix :- ");
+		for(int i=0;i<r;i++) {
+			for(int j=0;j<c;j++) {
+				System.out.print(a[i][j]+ " ");
+			}
+			System.out.println();
+		}
+		
+		int max=0;
+		int cnum = -1;
+		int m1=0;
+
+		for(int j=0;j<c;j++) {
+			int count=0;
+			for(int i=0;i<r;i++) {
+				if(a[i][j]==0) {
+					count = count +1;
+				}
+				if(max<count) {
+					max = count;
+					
+				}
+				
+			}
+			if(m1<max) {
+				m1=max;
+				cnum +=1;
+			}
+		}
+		System.out.println(cnum);
+	}
+
+}
