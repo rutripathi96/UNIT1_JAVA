@@ -1,0 +1,24 @@
+//Method overloading
+public class G9 {
+	public void fun(int rooms) {
+		System.out.println(rooms);
+	}
+	public void fun(int rooms, int bars) {
+		System.out.println(rooms+" "+bars);
+	}
+	public void fun(int rooms, int bars, int pools) {
+		System.out.println(rooms+" "+bars+" "+pools);
+	}
+	public void fun(String name) {
+		System.out.println(name);
+	}
+	public static void main(String[] args) {
+		G9 obj = new G9();
+		obj.fun(12);
+		obj.fun("Vikrant");
+		obj.fun(12,2,3);
+		obj.fun(12,1);
+		
+	}
+
+}
