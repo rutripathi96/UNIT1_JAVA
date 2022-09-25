@@ -1,0 +1,18 @@
+//pass by value
+public class G13 {
+	public void fun(int a,int b) {
+		a +=1;
+		b+=2;
+		System.out.println(a+" "+b);
+		
+	}
+	public static void main(String[] args) {
+		int a = 12;
+		int b = 14;
+		G13 obj = new G13();
+		System.out.println(a+" "+b);
+		obj.fun(a,b);
+		System.out.println(a+" "+b);
+	}
+
+}
