@@ -1,0 +1,27 @@
+//Given an array A of N elements. The task is to count number of even and odd elements in the array
+import java.util.Scanner;
+public class G1 {
+	public static void main(String[] args) {
+		int ceven=0;
+		int codd=0;
+		Scanner input = new Scanner(System.in);
+		System.out.println("How many elements you want in the array :- ");
+		int num = input.nextInt();
+		int[] arr = new int[num];
+		System.out.println("Enter the elements of the array :- ");
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = input.nextInt();
+		}
+		for( int i:arr) {
+			if(i%2==0) {
+				ceven +=1;
+			}
+			else {
+				codd +=1;
+			}
+		}
+		System.out.println("Number of even numbers :- "+ceven);
+		System.out.println("Number of add numbers :- "+codd);
+	}
+
+}
