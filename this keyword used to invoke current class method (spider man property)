@@ -1,0 +1,28 @@
+//this keyword used to invoke current class method (spider man property)
+public class G12 {
+	public void eng() {
+		System.out.println("Hello");
+		
+	}
+	public void guj() {
+		System.out.println("Kem cho");
+		this.french();
+	}
+	public void ben() {
+		System.out.println("Kemon acho");
+		this.eng();
+	}
+	public void hin() {
+		System.out.println("Namaste");
+		this.guj();
+	}
+	public void french() {
+		System.out.println("bonjour");
+		this.ben();
+	}
+	public static void main(String[] args) {
+		G12 obj = new G12();
+		obj.hin();
+	}
+
+}
