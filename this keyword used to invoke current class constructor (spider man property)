@@ -1,0 +1,31 @@
+//this keyword used to invoke current class constructor (spider man property)
+public class G12 {
+	public G12(int p) {
+		this(12,13); //this has to be the first statement in a constructor
+		System.out.println("Hello");
+		
+	}
+	public G12(int p, int q) {
+		this(12,13,14);
+		System.out.println("Kem cho");
+		
+	}
+	public G12(int p, int q, int r) {
+		this(12,13,14,15);
+		System.out.println("Kemon acho");
+		
+	}
+	public G12(int p, int q, int r, int s) {
+		this(12,13,14,15,16);
+		System.out.println("Namaste");
+		
+	}
+	public G12(int p, int q, int r, int s, int m) {
+		System.out.println("bonjour");
+
+	}
+	public static void main(String[] args) {
+		G12 obj = new G12(12);
+	}
+
+}
