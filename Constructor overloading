@@ -1,0 +1,25 @@
+//Constructor overloading
+public class G10 {
+	public G10(int rooms) {
+		System.out.println(rooms);
+	}
+	public G10(int rooms, int bars) {
+		System.out.println(rooms+" "+bars);
+	}
+	public G10(int rooms, int bars, int pools) {
+		System.out.println(rooms+" "+bars+" "+pools);
+	}
+	public G10(String name) {
+		System.out.println(name);
+	}
+	public static void main(String[] args) {
+		G10 obj = new G10("Rohit");
+		G10 obj1 = new G10(12,2,3);
+		G10 obj2 = new G10(19,2);
+		G10 obj3 = new G10(23);
+		
+		
+		
+	}
+
+}
