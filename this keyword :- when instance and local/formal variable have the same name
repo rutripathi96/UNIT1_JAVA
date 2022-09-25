@@ -1,0 +1,14 @@
+//this keyword :- when instance and local/formal variable have the same name
+public class G11 {
+	int a;
+	public void fun(int a) {
+		this.a = a;
+		System.out.println(this.a);
+	}
+	public static void main(String[] args) {
+		G11 obj = new G11();
+		obj.fun(12);
+		System.out.println(obj.a);
+	}
+
+}
