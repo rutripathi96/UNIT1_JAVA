@@ -1,0 +1,26 @@
+//Jogged Multidimensional array
+import java.util.Scanner;
+public class G8 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		G8 obj =new G8();
+		int[][] arr = new int[3][];
+		arr[0] = new int[3];
+		arr[1] = new int[1];
+		arr[2] = new int[5];
+		System.out.println("Enter the elements :- ");
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				arr[i][j] = input.nextInt(); 
+			}
+		}
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr[i].length;j++) {
+				System.out.print(arr[i][j]+" "); 
+			}
+			System.out.println();
+		}
+		
+	}
+
+}
