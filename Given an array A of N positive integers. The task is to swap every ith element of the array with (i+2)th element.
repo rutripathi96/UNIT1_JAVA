@@ -1,0 +1,25 @@
+//Given an array A of N positive integers. The task is to swap every ith element of the array with (i+2)th element.
+import java.util.Scanner;
+public class G2 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number of elements that you want in the array :- ");
+		int num = input.nextInt();
+		int[] arr = new int[num];
+		System.out.println("Enter the elements :- ");
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = input.nextInt();
+		}
+		for(int i=0;i<arr.length-2;i++) {
+			int temp = arr[i];
+			arr[i] = arr[i+2];
+			arr[i+2] = temp;
+			
+			
+		}
+		for(int i:arr) {
+			System.out.print(i+" ");
+		}
+	}
+
+}
